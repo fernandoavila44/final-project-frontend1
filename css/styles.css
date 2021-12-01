@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+:root{
+
+    /* Primary Colors */
+
+    --bright-red: rgb(242, 95, 58);
+    --dark-blue: rgb(35, 44, 81);
+
+    /* Neutral Colors */
+
+    --blue-grey-dark: rgb(143, 148, 167);
+    --very-dark-blue: rgb(29, 30, 37);
+    --very-pale-red: rgb(255, 239, 234);
+    --hover-status-red: rgb(241, 135, 109);
+    --red-shadow:rgba(242, 97, 59, 0.5);
+    --light-gray-variant: rgb(249, 249, 249);
+    --white-general-font: rgb(255, 255, 255);
+   
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+img{
+    display: block;
+}
+
+/* ################# GENERAL STYLES ################# */
+
+.header-container{
+    background-image: url(../images/bg-tablet-pattern.svg),
+                      url(../images/bg-tablet-pattern.svg);
+    background-size: 110%, 80%;
+    background-repeat: no-repeat;
+    background-position: top -80px right -90px, bottom 10px right -170px ;
+    padding: 3rem 7% 0;
+}
+
+.main-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 7% 0;
+}
+
+.section-general-styles{
+    display: flex;
+    flex-direction: column;
+}
+
+h1,h2{
+    color: var(--dark-blue);
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+}
+
+p{
+    color: var(--blue-grey-dark);
+    font-weight: 400;
+    line-height: 1.511rem;
+}
+
+.orange-botton-style{
+    background-color: var(--bright-red);
+    border-radius: 3.125rem;
+    border: none;
+    color: var(--white-general-font);
+    font-size: 0.824rem;
+    font-weight: 700;
+    padding: 0 2rem;
+    height: 2.75rem;
+    text-decoration: none;
+    box-shadow: 0px 7px 10px 1px var(--red-shadow);
+    cursor: pointer;
+}
+
+/* Hover button style */
+
+.orange-botton-style:hover{
+    background-color: var(--hover-status-red)
+}
+.orange-span-style{
+    background-color: var(--bright-red);
+    border-radius: 3.125rem;
+    color: var(--white-general-font);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.8rem 1.5rem;
+}
+
+/* ################# NAVBAR STYLES ################# */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.nav-elements-hide,.nav-links-elements-hide{
+    display: none;
+}
+
+/* ################# HIDEN DROPDOWN BOTTON & MENU ################# */
+
+.dropBton{
+    display: block;
+    background-color: var(--light-gray-variant);
+    border: none;
+    cursor: pointer;
+}
+
+.dropDown{
+    display: block;
+    position: relative;
+    margin-right: 1rem;;
+}
+
+.dropDownContent{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--light-gray-variant);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropDownContent a:link{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropDownContent a:visited{
+    color: black;
+}
+
+.dropDown:hover .dropDownContent{
+    display: block;
+}
+
+/* ################# FIRST SECTION SPECIFIC STYLES ################# */
+
+.image-first-section img{
+    width: 100%;
+}
+
+.content-first-section{
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.content-first-section p{
+    margin: 0.5rem 0 2.5rem;
+}
+
+/* ################# SECOND SECTION SPECIFIC STYLES ################# */
+
+.content-second-section{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.content-second-section-p{
+    margin: 0.5rem 0 0;
+    font-size: 0.938rem;
+}
+
+/* Benefits list */
+
+ol {
+    list-style: none;
+}
+
+.title-list-items{
+    background-color: var(--very-pale-red);
+    border-radius: 3.125rem 0 0 3.125rem;
+    font-size: 1rem;
+    padding: 0.8rem 0;
+    color: var(--dark-blue);
+    letter-spacing: -1px;
+}
+
+.title-list-items span{
+    background-color: var(--bright-red);
+    border-radius: 3.125rem;
+    color: var(--white-general-font);
+    font-size: 1rem;
+    margin-right: 0.7rem;
+    padding: 0.8rem 1.7rem; 
+}
+
+.p-list-items{
+    margin: 0.5rem 0 3rem;
+    font-size: 0.844rem;
+}
+
+/* ################# THIRD SECTION SPECIFIC STYLES ################# */
+
+.third-section{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.third-section h2,.container-card-third-section{
+    margin: 0 0 6rem;
+}
+
+.card-third-section{
+    align-items: center;
+    background-color: var(--light-gray-variant);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 3rem 1.6rem 2.5rem;
+}
+
+.card-third-section img{
+    width: 4.375rem;
+    position: absolute;
+    top: -2.188rem;
+}
+
+.card-third-section h3{
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.card-hide{
+    display: none;
+}
+
+/* ################# FOOTER SPECIFIC STYLES ################# */
+
+/* Footer - simply orange section */
+
+.simply-section{
+    background-color: var(--bright-red);
+    background-image: url(../images/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 12.8%;
+}
+
+.title-simply-section{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.title-simply-section h2{
+    color: var(--white-general-font);
+    font-weight: 500;
+}
+
+.simply-section button{
+    background-color: var(--white-general-font);
+    color: var(--bright-red);
+    box-shadow: none;
+}
+
+.simply-section button:hover{
+    background-color: var(--white-general-font);
+    color: var(--hover-status-red);
+}
+
+/* Footer - dark section */
+
+.footer-dark-section{
+    background-color: var(--very-dark-blue);
+    padding: 2rem 0;
+}
+
+/* Form styles */
+
+.group-form-copyright{
+    margin: 0 0 3rem;
+    text-align: center;
+}
+
+.group-form-copyright input{
+    border-radius: 3.125rem;
+    border: none;
+    height: 2.75rem;
+    padding-left: 1.5rem;
+    width: 14rem;
+}
+
+.group-form-copyright button{
+    box-shadow: none;
+}
+
+.copyright-desktop{
+    display: none;
+    font-size: 0.75rem;
+}
+
+/* Navigation footer links styles */
+
+.group-links-navigation{
+    color: var(--white-general-font);
+    display: flex;
+    font-weight: 400;
+    justify-content: space-between;
+    margin: 0 0 3rem;
+    padding: 0 12.8%;
+}
+
+.group-links-navigation li{
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+.group-links-navigation li:hover{
+    color: var(--bright-red);
+    cursor: pointer;
+}
+
+.social-icons img:hover{
+    cursor: pointer;
+    filter: invert(0.4) sepia(1) saturate(12.3) hue-rotate(316.8deg) brightness(0.87);
+}
+
+/* Social icons */
+
+.group-socialicons-logo{
+    display: flex;
+    flex-direction: column;
+    padding: 0 12.8%;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 3rem;
+}
+
+.logo-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-copyright img{
+    margin: 0 0 3rem;
+}
+
+.logo-copyright p{
+    font-size: 0.75rem;
+    line-height: normal;
+}
+
+/* ################# MEDIA QUERIES ################# */
+
+@media (max-width: 374px){
+    .title-list-items{
+        font-size: 0.85rem;
+    }
+
+    .title-list-items span{
+        padding: 0.8rem 1.4rem;
+    }
+}
+
+@media (min-width: 1024px){
+
+    /* ################# Header container new background and padding configuration  ################# */
+    
+    .header-container{
+        background-image: url(../images/bg-tablet-pattern.svg);
+        background-size: 50%;
+        padding: 4rem 10% 0;
+        margin-bottom: 5rem;
+    }
+
+    /* ################# Navbar new configuration ################# */
+
+    nav{
+        align-items: center;
+        margin-bottom: 7rem;
+    }
+
+    .nav-links-elements-hide{
+        color: var(--dark-blue);
+        display: flex;
+        font-weight: 500;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+
+    .nav-links-elements-hide li{
+        margin: 0 1rem;
+    }
+
+    .nav-links-elements-hide li:hover{
+        color: var(--blue-grey-dark);
+        cursor: pointer;
+    }
+
+    .nav-elements-hide{
+        display: block;
+    }
+
+    .dropDown,.dropBton{
+        display: none;
+    }
+    
+    /* ################# First section Graph and introduction new configuration ################# */
+
+    .first-section{
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .image-first-section{
+        width: 50%;
+    }
+    .image-first-section img{
+        width: 100%;
+    }
+
+    .content-first-section{
+        margin-bottom: 0;
+        text-align: left;
+        width: 40%;
+    }
+
+    .content-first-section h1{
+        font-size: 3.125rem;
+    }
+
+    .content-first-section p{
+        margin: 3rem 0;
+        width: 75%;
+    }
+
+    /* ################# Main container new configuration ################# */
+    
+    .main-container{
+        background-image: url(../images/bg-tablet-pattern.svg);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: bottom 150px left -430px;
+        padding: 0 10% 0;
+        margin-bottom: 10rem;
+    }
+
+    /* ################# Second section new configuration ################# */
+
+    .second-section{
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+    }
+
+    .content-second-section{
+        text-align: left;
+        width: 40%;
+    }
+
+    .list-benefits{
+        width: 48%;
+    }
+
+    .content-second-section p{
+        font-size: initial;
+        margin: 3rem 0;
+        width: 70%;
+    }
+
+    /* Benefist list */
+
+    .title-list-items{
+        background-color: var(--white-general-font);
+    }
+
+    .p-list-items{
+        font-size: initial;
+        margin-left: 5.5rem;
+        margin-right: 2rem;
+    }
+
+    /* ################# Third section new configuration ################# */
+
+    .third-section{
+        margin-bottom: 0;
+    }
+
+    /* Testimonials cards */
+
+    .container-card-third-section{
+        justify-content: space-between;
+        display: flex;
+        width: 95vw;
+    }
+
+    .card-third-section{
+        width: 30%;
+    }
+
+    .card-hide{
+        display: flex;
+    }
+
+    /* ################# Footer new configuration ################# */
+
+    /* Footer - simply orange section */
+
+    .simply-section{
+        background-image: url(../images/bg-simplify-section-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top -110px right -220px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5rem 10%;
+    }
+
+    .title-simply-section{
+        margin: 0;
+        text-align: left;
+        padding: 0;
+        width: 40%;
+    }
+
+    /* Footer - dark section */
+
+    .footer-dark-section{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 5rem 10%;
+    }
+
+    /* Copyrigth legend below form */
+
+    .copyright-desktop{
+        display: block;
+        margin-top: 4rem;
+        text-align: right;
+    }
+
+    /* Copyrigth legend below logo in mobile off */
+
+    .copyright-mobile{
+        display: none;
+    }
+
+    /* Resets margins and paddings within footer dark section*/
+
+    .group-socialicons-logo,.group-links-navigation,.group-form-copyright{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Navigation footer links*/
+
+    .group-links-navigation{
+        flex-grow: 0.4;
+    }
+
+    /* Social icons*/
+
+    .group-socialicons-logo{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .social-icons{
+        margin: 0;
+        width: 100%;
+    }
+
+}
