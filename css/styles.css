@@ -232,6 +232,7 @@ ol {
 }
 
 .card-third-section h3{
+    color: var(--very-dark-blue);
     font-size: 1rem;
     margin-bottom: 0.6rem;
 }
