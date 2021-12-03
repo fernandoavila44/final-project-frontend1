@@ -202,7 +202,7 @@ ol {
 
 .p-list-items{
     margin: 0.5rem 0 3rem;
-    font-size: 0.844rem;
+    font-size: 0.83rem;
 }
 
 /* ################# THIRD SECTION SPECIFIC STYLES ################# */
@@ -483,7 +483,6 @@ ol {
     }
 
     .content-second-section p{
-        font-size: initial;
         margin: 3rem 0;
         width: 70%;
     }
@@ -497,7 +496,7 @@ ol {
     .p-list-items{
         font-size: initial;
         margin-left: 5.5rem;
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
 
     /* ################# Third section new configuration ################# */
